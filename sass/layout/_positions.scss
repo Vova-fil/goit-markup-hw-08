@@ -1,0 +1,48 @@
+/* Наша команда */
+
+.positions {
+  /*padding-top: 94px;*/
+  background: #f5f4fa;
+}
+.positions h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.position-list {
+  display: flex;
+  /*padding-bottom: 94px;*/
+  /* margin-bottom: 94px;*/
+  /*height: 368px;*/
+  /*width: 270px;
+  background-color: #ffffff;*/
+  border-radius: 4px;
+  /*/box-shadow: 0 0 4px 0 black;*/
+}
+
+.position-list__img {
+  text-align: center;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.position-list__text {
+  height: 168px;
+  /* margin-top: 30px;*/
+  /* margin-bottom: 30px;*/
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.position-list-text h3 {
+  font-size: 16px;
+}
+
+.position-list p {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 16px;
+}

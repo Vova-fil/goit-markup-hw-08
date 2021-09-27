@@ -1,0 +1,20 @@
+.btn {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: var(--secondary-text-color);
+  background: #4985ff;
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  width: 200px;
+  height: 45px;
+  border-color: transparent;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    background-color: transparent;
+  }
+}
