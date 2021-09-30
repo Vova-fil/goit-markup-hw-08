@@ -17,6 +17,14 @@ footer {
     flex-direction: row;
   }
 }
+.bottom-icons-futer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
 .bottom .container {
   display: flex;
   background-color: #2f303a;
