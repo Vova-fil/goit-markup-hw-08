@@ -25,10 +25,10 @@
   //&:not(:last-child) {
   // margin-right: 32px;
   //}
-  width: 100%;
+  //width: 100%;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    flex-basis: calc (100% / 2 -30px);
+    flex-basis: calc (100% / 2 -120px);
     margin-left: 30px;
   }
   @media screen and (min-width: 1200px) {
@@ -41,6 +41,7 @@
     text-transform: uppercase;
   }
 }
+
 .text-benefits p {
   font-size: 14px;
   line-height: 1.71;
@@ -61,7 +62,7 @@
   //top: 774px;
 
   background: #f5f4fa;
-  border-radius: 4px;
+  //border-radius: 4px;
   //padding: 25px 100px 25px 100px;
   //margin-bottom: 30px;
   //margin-left: auto;

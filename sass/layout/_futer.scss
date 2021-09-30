@@ -4,21 +4,43 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.bottom-box {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
 .bottom .container {
   display: flex;
   background-color: #2f303a;
   margin-top: 0px;
-  align-items: baseline;
+  //align-items: baseline;
+  //flex-direction: column;
 }
 
 .bottom-futer {
-  display: block;
-  display: table-cell;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //display: block;
+  // display: table-cell;
   margin-top: 0px;
-  align-content: center;
-  align-items: baseline;
-  margin-right: 70px;
+  //align-content: center;
+  //align-items: baseline;
+  //margin-right: 70px;
+  margin-bottom: 60px;
   flex-grow: 1;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    display: table-cell;
+  }
 }
 .bottom-list {
   display: block;
@@ -79,27 +101,36 @@ footer {
   background: rgba(255, 255, 255, 0.1);
 }
 .icons-futer {
-  display: block;
-  display: table-cell;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  // display: block;
+  // display: table-cell;
   margin-top: 0px;
-  align-content: center;
+  //align-content: center;
   /*display: flex;
      justify-content: center;
      align-items: center;
      display: block;*/
   /* width: 206px;*/
-  height: 80px;
-  margin-right: 93px;
+  //height: 80px;
+  //margin-right: 93px;
   /*margin-left: 70px;*/
+  @media screen and (min-width: 1200px) {
+    display: block;
+    display: table-cell;
+  }
 }
 .icons-futer h2 {
-  font-family: Roboto;
+  //text-align: left;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-align: left;
+
   color: #ffffff;
   padding-bottom: 10px;
 }
@@ -115,10 +146,16 @@ footer {
 }
 .form-box {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  //justify-content: flex-end;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    display: table-cell;
+  }
 }
 .form-box__futer-icon {
-  display: flex;
+  //display: flex;
   justify-content: center;
 }
 .form-box__futer-icon button {
