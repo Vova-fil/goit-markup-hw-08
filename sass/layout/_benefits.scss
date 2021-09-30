@@ -13,6 +13,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 94px;
@@ -25,14 +26,14 @@
   //&:not(:last-child) {
   // margin-right: 32px;
   //}
-  //width: 100%;
+  // width: 100%;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    flex-basis: calc (100% / 2 -120px);
+    flex-basis: calc (100% / 2 - 120px);
     margin-left: 30px;
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc (100% / 4 -60px);
+    flex-basis: calc (100% / 4 - 60px);
     margin-left: 30px;
   }
   h3 {

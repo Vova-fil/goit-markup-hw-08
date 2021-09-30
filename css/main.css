@@ -828,6 +828,7 @@ img {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
 }
 
@@ -840,6 +841,7 @@ img {
 }
 
 .benefits-list__text {
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -936,15 +938,6 @@ img {
 .positions h2 {
   text-align: center;
   margin-bottom: 50px;
-}
-
-.position-list {
-  /*padding-bottom: 94px;*/
-  /* margin-bottom: 94px;*/
-  /*height: 368px;*/
-  /*width: 270px;
-  background-color: #ffffff;*/
-  /*/box-shadow: 0 0 4px 0 black;*/
 }
 
 @media screen and (min-width: 768px) {
@@ -1237,13 +1230,18 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .form-box {
-    display: block;
-    display: table-cell;
+    justify-content: flex-end;
   }
 }
 
 .form-box__futer-icon {
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-box__futer-icon {
+    display: flex;
+  }
 }
 
 .form-box__futer-icon button {

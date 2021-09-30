@@ -150,13 +150,17 @@ footer {
   align-items: center;
   //justify-content: flex-end;
   @media screen and (min-width: 1200px) {
-    display: block;
-    display: table-cell;
+    // display: block;
+    //display: table-cell;
+    justify-content: flex-end;
   }
 }
 .form-box__futer-icon {
   //display: flex;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .form-box__futer-icon button {
   width: 200px;
