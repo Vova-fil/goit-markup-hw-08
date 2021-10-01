@@ -21,40 +21,93 @@
 
 <body>
 
+
     <!-- Шапка сайта -->
+    
     <header class="page-header">
         <div class="container main-nav">
             <a lang="en" class="site-nav-logo" href="WebStudio">Web<span>Studio</span></a>
             <nav>
                 <ul class="site-nav list">
-                    <!--<li lang="en" class="nav-item site-nav-logo"><a href="WebStudio">Web<span>Studio</span></a></li>-->
-                    <li class="site-nav__item"><a href="./index.html" class="link">Студия</a></li>
+    
+                    <li class="site-nav__item"><a href="./index.html" class="link ">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__current">Портфолио</a></li>
                     <li class="site-nav__item"><a href="Контакты" class="link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="nav-link list">
-                <li class="nav-link__item" lang="en">
-                    <a href="mailto:info@devstudio.com" class="current">
-                        <svg class="nav-link__icon-envelope" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                        <!--./images/icons.svgs#icon-smartphone-->
-                    </a>
+            <div class="nav-link-bottom">
+                <ul class="nav-link list">
+                    <li class="nav-link__item" lang="en">
+                        <a href="mailto:info@devstudio.com" class="current">
+                            <svg class="nav-link__icon-envelope" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
     
-                </li>
-                <li class="nav-link__item">
-                    <a href="tel:+380961111111" class="current">
-                        <svg class="nav-link__icon-smartphone" width="10" height="16">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
+                        </a>
     
-                    </a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a href="tel:+380961111111" class="current">
+                            <svg class="nav-link__icon-smartphone" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
     
-                </li>
-            </ul>
+                        </a>
+    
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="menu-open">
+                <svg class="menu-open__icon-menu_24" width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu is-hidden">
+            <div class="container">
+                <button type="button" class="menu-close">
+                    <svg class="menu-close__icon-close_24" width="24" height="24">
+                        <use href="./images/icons.svg#icon-close_24px"></use>
+                    </svg>
+                </button>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-item">
+                        <a href="./index.html" class="mob-menu-link">Студия</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="portfolio.html" class="mob-menu-link">Портфолио</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="Контакты" class="mob-menu-link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-contacs-list list">
+                        <li class="mob-contacs-item">
+                            <a href="" class="mob-contacs-link mob-contacs-tel-link">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-contacs-item">
+                            <a href="" class="mob-contacs-link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mob-social-list list">
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link">Instagram</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link">Twitter</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link">Facebook</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -77,7 +130,34 @@
                     <li class="portfolio-img__item">
                         <a class="portfolio-img__over">
                         <div class="portfolio-img__overl">
-                            <img src="./images/portfolio/img-portfolio1.jpg" alt="Технокряк" width="370" height="294" />
+                            <picture>
+                                <source srcset="
+                                                    ./images/desktop/portfolio1.webp    1x,
+                                                    ./images/desktop/portfolio1@2x.webp 2x
+                                                  " media="(min-width:1200px)" type="image/web" />
+                                <source srcset="
+                                                    ./images/desktop/portfolio1.jpg    1x,
+                                                    ./images/desktop/portfolio1@2x.jpg 2x
+                                                  " media="(min-width:1200px)" />
+                                <source srcset="
+                                                    ./images/tablet/portfolio1.webp    1x,
+                                                    ./images/tablet/portfolio1@2x.webp 2x
+                                                  " media="(min-width:768px)" type="image/web" />
+                                <source srcset="
+                                                    ./images/tablet/portfolio1.jpg    1x,
+                                                    ./images/tablet/portfolio1@2x.jpg 2x
+                                                  " media="(min-width:768px)" />
+                                <source srcset="
+                                                    ./images/mobile/portfolio1.webp 1x,
+                                                    ./images/mobile/portfolio1.webp 2x
+                                                  " media="(min-width:280px)" type="image/web" />
+                                <source srcset="
+                                                    ./images/mobile/portfolio1.jpg    1x,
+                                                    ./images/mobile/portfolio1@2x.jpg 2x
+                                                  " media="(min-width:280px)" />
+                                <img src="#" alt="Технокряк" />
+                            </picture>
+                            
                             <div class="portfolio-img__text-overl">
                                 <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                     платформу для цифрового
@@ -94,61 +174,273 @@
                     </li>
 
                     <li class="portfolio-img__item">
-                        <img src="./images/portfolio/img-portfolio2.jpg" alt="Постер New Orlean vs Golden Star"
-                            width="370" height="294" />
+                        <picture>
+                            <source srcset="
+                                                ./images/desktop/portfolio2.webp    1x,
+                                                ./images/desktop/portfolio2@2x.webp 2x
+                                              " media="(min-width:1200px)" type="image/web" />
+                            <source srcset="
+                                                ./images/desktop/portfolio2.jpg    1x,
+                                                ./images/desktop/portfolio2@2x.jpg 2x
+                                              " media="(min-width:1200px)" />
+                            <source srcset="
+                                                ./images/tablet/portfolio2.webp    1x,
+                                                ./images/tablet/portfolio2@2x.webp 2x
+                                              " media="(min-width:768px)" type="image/web" />
+                            <source srcset="
+                                                ./images/tablet/portfolio2.jpg    1x,
+                                                ./images/tablet/portfolio2@2x.jpg 2x
+                                              " media="(min-width:768px)" />
+                            <source srcset="
+                                                ./images/mobile/portfolio2.webp 1x,
+                                                ./images/mobile/portfolio2.webp 2x
+                                              " media="(min-width:280px)" type="image/web" />
+                            <source srcset="
+                                                ./images/mobile/portfolio2.jpg    1x,
+                                                ./images/mobile/portfolio2@2x.jpg 2x
+                                              " media="(min-width:280px)" />
+                            <img src="#" alt="Два баскетболиста" />
+                        </picture>
+                        
                         <div class="portfolio-img__text">
                             <h3>Постер <span lang="en">Orlean vs Golden Star</span></h3>
                             <p>Дизайн</p>
                         </div>
                     </li>
                     <li class="portfolio-img__item">
-                        <img src="./images/portfolio/img-portfolio3.jpg" alt="Ресторан Seafood" width="370"
-                            height="294" />
+                        <picture>
+                            <source srcset="
+                                                ./images/desktop/portfolio3.webp    1x,
+                                                ./images/desktop/portfolio3@2x.webp 2x
+                                              " media="(min-width:1200px)" type="image/web" />
+                            <source srcset="
+                                                ./images/desktop/portfolio3.jpg    1x,
+                                                ./images/desktop/portfolio3@2x.jpg 2x
+                                              " media="(min-width:1200px)" />
+                            <source srcset="
+                                                ./images/tablet/portfolio3.webp    1x,
+                                                ./images/tablet/portfolio3@2x.webp 2x
+                                              " media="(min-width:768px)" type="image/web" />
+                            <source srcset="
+                                                ./images/tablet/portfolio3.jpg    1x,
+                                                ./images/tablet/portfolio3@2x.jpg 2x
+                                              " media="(min-width:768px)" />
+                            <source srcset="
+                                                ./images/mobile/portfolio3.webp 1x,
+                                                ./images/mobile/portfolio3.webp 2x
+                                              " media="(min-width:280px)" type="image/web" />
+                            <source srcset="
+                                                ./images/mobile/portfolio3.jpg    1x,
+                                                ./images/mobile/portfolio3@2x.jpg 2x
+                                              " media="(min-width:280px)" />
+                            <img src="#" alt="Ресторан Дары моря" />
+                        </picture>
+                        
                         <div class="portfolio-img__text">
                             <h3>Ресторан <span lang="en">Seafood</span></h3>
                             <p>Приложение</p>
                         </div>
                     </li>
                     <li class="portfolio-img__item">
-                        <img src="./images/portfolio/img-portfolio4.jpg" alt="Проект Prime" width="370" height="294" />
+                        <picture>
+                            <source srcset="
+                                                ./images/desktop/portfolio4.webp    1x,
+                                                ./images/desktop/portfolio4@2x.webp 2x
+                                              " media="(min-width:1200px)" type="image/web" />
+                            <source srcset="
+                                                ./images/desktop/portfolio4.jpg    1x,
+                                                ./images/desktop/portfolio4@2x.jpg 2x
+                                              " media="(min-width:1200px)" />
+                            <source srcset="
+                                                ./images/tablet/portfolio4.webp    1x,
+                                                ./images/tablet/portfolio4@2x.webp 2x
+                                              " media="(min-width:768px)" type="image/web" />
+                            <source srcset="
+                                                ./images/tablet/portfolio4.jpg    1x,
+                                                ./images/tablet/portfolio4@2x.jpg 2x
+                                              " media="(min-width:768px)" />
+                            <source srcset="
+                                                ./images/mobile/portfolio4.webp 1x,
+                                                ./images/mobile/portfolio4.webp 2x
+                                              " media="(min-width:280px)" type="image/web" />
+                            <source srcset="
+                                                ./images/mobile/portfolio4.jpg    1x,
+                                                ./images/mobile/portfolio4@2x.jpg 2x
+                                              " media="(min-width:280px)" />
+                            <img src="#" alt="Наушники" />
+                        </picture>
+                        
                         <div class="portfolio-img__text">
                             <h3>Проект <span lang="en">Prime</span></h3>
                             <p>Маркетинг</p>
                         </div>
                     </li>
                     <li class="portfolio-img__item">
-                        <img src="./images/portfolio/img-portfolio5.jpg" alt="Проект Boxes" width="370" height="294" />
+                        <picture>
+                            <source srcset="
+                                                ./images/desktop/portfolio5.webp    1x,
+                                                ./images/desktop/portfolio5@2x.webp 2x
+                                              " media="(min-width:1200px)" type="image/web" />
+                            <source srcset="
+                                                ./images/desktop/portfolio5.jpg    1x,
+                                                ./images/desktop/portfolio5@2x.jpg 2x
+                                              " media="(min-width:1200px)" />
+                            <source srcset="
+                                                ./images/tablet/portfolio5.webp    1x,
+                                                ./images/tablet/portfolio5@2x.webp 2x
+                                              " media="(min-width:768px)" type="image/web" />
+                            <source srcset="
+                                                ./images/tablet/portfolio5.jpg    1x,
+                                                ./images/tablet/portfolio5@2x.jpg 2x
+                                              " media="(min-width:768px)" />
+                            <source srcset="
+                                                ./images/mobile/portfolio5.webp 1x,
+                                                ./images/mobile/portfolio5.webp 2x
+                                              " media="(min-width:280px)" type="image/web" />
+                            <source srcset="
+                                                ./images/mobile/portfolio5.jpg    1x,
+                                                ./images/mobile/portfolio5@2x.jpg 2x
+                                              " media="(min-width:280px)" />
+                            <img src="#" alt="Две коробки" />
+                        </picture>
+                        
                         <div class="portfolio-img__text">
                             <h3>Проект<span lang="en">Boxes</span>span</h3>
                             <p>Приложение</p>
                         </div>
                     </li>
                     <li class="portfolio-img__item">
-                        <img src="./images/portfolio/img-portfolio6.jpg" alt="Inspiration has no Borders" width="370"
-                            height="294" />
+                        <picture>
+                            <source srcset="
+                                                ./images/desktop/portfolio6.webp    1x,
+                                                ./images/desktop/portfolio6@2x.webp 2x
+                                              " media="(min-width:1200px)" type="image/web" />
+                            <source srcset="
+                                                ./images/desktop/portfolio6.jpg    1x,
+                                                ./images/desktop/portfolio6@2x.jpg 2x
+                                              " media="(min-width:1200px)" />
+                            <source srcset="
+                                                ./images/tablet/portfolio6.webp    1x,
+                                                ./images/tablet/portfolio6@2x.webp 2x
+                                              " media="(min-width:768px)" type="image/web" />
+                            <source srcset="
+                                                ./images/tablet/portfolio6.jpg    1x,
+                                                ./images/tablet/portfolio6@2x.jpg 2x
+                                              " media="(min-width:768px)" />
+                            <source srcset="
+                                                ./images/mobile/portfolio6.webp 1x,
+                                                ./images/mobile/portfolio6.webp 2x
+                                              " media="(min-width:280px)" type="image/web" />
+                            <source srcset="
+                                                ./images/mobile/portfolio6.jpg    1x,
+                                                ./images/mobile/portfolio6@2x.jpg 2x
+                                              " media="(min-width:280px)" />
+                            <img src="#" alt="Монитор" />
+                        </picture>
+                       
                         <div class="portfolio-img__text">
                             <h3 lang="en">Inspiration has no Borders</h3>
                             <p>Веб-сайт</p>
                         </div>
                     </li>
                     <li class="portfolio-img__item">
-                        <img src="./images/portfolio/img-portfolio7.jpg" alt="Издание Limited Edition" width="370"
-                            height="294" />
+                        <picture>
+                            <source srcset="
+                                                ./images/desktop/portfolio7.webp    1x,
+                                                ./images/desktop/portfolio7@2x.webp 2x
+                                              " media="(min-width:1200px)" type="image/web" />
+                            <source srcset="
+                                                ./images/desktop/portfolio7.jpg    1x,
+                                                ./images/desktop/portfolio7@2x.jpg 2x
+                                              " media="(min-width:1200px)" />
+                            <source srcset="
+                                                ./images/tablet/portfolio7.webp    1x,
+                                                ./images/tablet/portfolio7@2x.webp 2x
+                                              " media="(min-width:768px)" type="image/web" />
+                            <source srcset="
+                                                ./images/tablet/portfolio7.jpg    1x,
+                                                ./images/tablet/portfolio7@2x.jpg 2x
+                                              " media="(min-width:768px)" />
+                            <source srcset="
+                                                ./images/mobile/portfolio7.webp 1x,
+                                                ./images/mobile/portfolio7.webp 2x
+                                              " media="(min-width:280px)" type="image/web" />
+                            <source srcset="
+                                                ./images/mobile/portfolio7.jpg    1x,
+                                                ./images/mobile/portfolio7@2x.jpg 2x
+                                              " media="(min-width:280px)" />
+                            <img src="#" alt="Издание книга" />
+                        </picture>
+                        
                         <div class="portfolio-img__text">
                             <h3>Издание <span lang="en">Edition</span> </h3>
                             <p>Дизайн</p>
                         </div>
                     </li>
                     <li class="portfolio-img__item">
-                        <img src="./images/portfolio/img-portfolio8.jpg" alt="Проект LAB" width="370" height="294" />
+                        <picture>
+                            <source srcset="
+                                                ./images/desktop/portfolio8.webp    1x,
+                                                ./images/desktop/portfolio8@2x.webp 2x
+                                              " media="(min-width:1200px)" type="image/web" />
+                            <source srcset="
+                                                ./images/desktop/portfolio8.jpg    1x,
+                                                ./images/desktop/portfolio8@2x.jpg 2x
+                                              " media="(min-width:1200px)" />
+                            <source srcset="
+                                                ./images/tablet/portfolio8.webp    1x,
+                                                ./images/tablet/portfolio8@2x.webp 2x
+                                              " media="(min-width:768px)" type="image/web" />
+                            <source srcset="
+                                                ./images/tablet/portfolio8.jpg    1x,
+                                                ./images/tablet/portfolio8@2x.jpg 2x
+                                              " media="(min-width:768px)" />
+                            <source srcset="
+                                                ./images/mobile/portfolio8.webp 1x,
+                                                ./images/mobile/portfolio8.webp 2x
+                                              " media="(min-width:280px)" type="image/web" />
+                            <source srcset="
+                                                ./images/mobile/portfolio8.jpg    1x,
+                                                ./images/mobile/portfolio8@2x.jpg 2x
+                                              " media="(min-width:280px)" />
+                        
+                            <img src="#" alt="Бирка с буквaми" />
+                        </picture>
+                        
                         <div class="portfolio-img__text">
                             <h3>Проект <span lang="en">LAB</span></h3>
                             <p>Маркетинг</p>
                         </div>
                     </li>
                     <li class="portfolio-img__item">
-                        <img src="./images/portfolio/img-portfolio9.jpg" alt="Growing Business" width="370"
-                            height="294" />
+                        <picture>
+                            <source srcset="
+                                                ./images/desktop/portfolio9.webp    1x,
+                                                ./images/desktop/portfolio9@2x.webp 2x
+                                              " media="(min-width:1200px)" type="image/web" />
+                            <source srcset="
+                                                ./images/desktop/portfolio9.jpg    1x,
+                                                ./images/desktop/portfolio9@2x.jpg 2x
+                                              " media="(min-width:1200px)" />
+                            <source srcset="
+                                                ./images/tablet/portfolio9.webp    1x,
+                                                ./images/tablet/portfolio9@2x.webp 2x
+                                              " media="(min-width:768px)" type="image/web" />
+                            <source srcset="
+                                                ./images/tablet/portfolio9.jpg    1x,
+                                                ./images/tablet/portfolio9@2x.jpg 2x
+                                              " media="(min-width:768px)" />
+                            <source srcset="
+                                                ./images/mobile/portfolio9.webp 1x,
+                                                ./images/mobile/portfolio9.webp 2x
+                                              " media="(min-width:280px)" type="image/web" />
+                            <source srcset="
+                                                ./images/mobile/portfolio9.jpg    1x,
+                                                ./images/mobile/portfolio9@2x.jpg 2x
+                                              " media="(min-width:280px)" />
+                            <img src="#" alt="Человек за компьютером" />
+                        </picture>
+                       
                         <div class="portfolio-img__text">
                             <h3 lang="en">Growing Business</h3>
                             <p>Приложение</p>
@@ -160,13 +452,15 @@
         </section>
     </main>
 
-        <!-- Футер -->
-        <footer class="bottom">
-            <div class="container">
+    <!-- Футер -->
+    
+    <footer class="bottom">
+        <div class="bottom-box container">
+            <div class="bottom-icons-futer">
                 <div class="bottom-futer">
                     <a lang="en" class="bottom-logo" href="WebStudio" class="link">Web<span>Studio</span></a>
                     <ul class="bottom-list link list">
-                        <!--<li lang="en" class="bottom-logo"><a href="WebStudio" class="link">Web<span>Studio</span></a></li>-->
+    
                         <li>
                             <address>
                                 г. Киев, пр-т Леси Украинки, 26
@@ -179,7 +473,7 @@
                 </div>
                 <div class="icons-futer">
                     <h2>ПРИСОЕДИНЯЙТЕСЬ</h2>
-        
+    
                     <ul class="masters-socials masters-socials-futer list">
                         <li class="masters-socials__socials-item masters-socials-futer__item">
                             <a href="" class="masters-socials__socials-link masters-socials-futer__link link">
@@ -210,11 +504,13 @@
                             </a>
                         </li>
                     </ul>
-                </div class="form-box">
+                </div>
+            </div>
+            <div class="form-box">
                 <form action="" class="js-speaker-form form-box__futer">
                     <div class="form-box__icons-futer">
                         <h2>ПОДПИШИСЬ НА РАССЫЛКУ</h2>
-                        <!-- <label for="mail">Почта</label>-->
+    
                         <ul class="form-box__futer-icon">
                             <li>
                                 <input type="email" name="mail" id="mail" placeholder="E-mail" />
@@ -229,8 +525,10 @@
                     </div>
                 </form>
             </div>
-        </footer>
-
+        </div>
+    </footer>
+    
+    <script src="./js/menu.js"></script>
 
 </body>
 

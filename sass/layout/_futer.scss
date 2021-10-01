@@ -21,8 +21,13 @@ footer {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: center;
+    align-content: center;
+    //align-items: baseline;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: auto;
   }
 }
 .bottom .container {
@@ -48,6 +53,8 @@ footer {
   @media screen and (min-width: 1200px) {
     display: block;
     display: table-cell;
+
+    margin-right: 70px;
   }
 }
 .bottom-list {
@@ -153,17 +160,24 @@ footer {
   margin-right: 93px;
 }
 .form-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
   //justify-content: flex-end;
+  display: block;
+  //width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 1200px) {
-    // display: block;
-    //display: table-cell;
+    display: block;
+    display: table-cell;
     justify-content: flex-end;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .form-box__futer-icon {
+  display: block;
   //display: flex;
   justify-content: center;
   @media screen and (min-width: 1200px) {
@@ -180,6 +194,7 @@ footer {
 }
 .form-box__button-futer {
   display: flex;
+  margin-top: 10px;
 }
 .icon-icon-send {
   margin-left: 10px;

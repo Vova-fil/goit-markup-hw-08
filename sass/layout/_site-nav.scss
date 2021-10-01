@@ -47,7 +47,7 @@
 .site-nav-logo {
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-right: 93px;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -55,6 +55,9 @@
   /* identical to box height */
   letter-spacing: 0.03em;
   color: #2196f3;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .site-nav-logo a {
   color: #2196f3;
