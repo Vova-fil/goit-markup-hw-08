@@ -195,6 +195,9 @@ footer {
 .form-box__button-futer {
   display: flex;
   margin-top: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 .icon-icon-send {
   margin-left: 10px;
