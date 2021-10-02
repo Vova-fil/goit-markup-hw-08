@@ -1273,7 +1273,6 @@ footer {
 
 .masters-socials-futer {
   margin-left: 0px;
-  margin-right: 93px;
 }
 
 .form-box {
@@ -1303,6 +1302,20 @@ footer {
   }
 }
 
+.form-box__icons-futer-h2 {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-box__icons-futer-h2 {
+    text-align: left;
+  }
+}
+
+.form-box__futer-icon-button {
+  margin-left: 70px;
+}
+
 .form-box__futer-icon button {
   width: 200px;
   height: 50px;
@@ -1310,7 +1323,6 @@ footer {
 
 .form-box__botton-futer {
   /*padding: 10px 28px 10px 29px;*/
-  text-align: center;
 }
 
 .form-box__button-futer {
@@ -1338,6 +1350,7 @@ footer {
 }
 
 .form-box__icons-futer h2 {
+  text-align: center;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
